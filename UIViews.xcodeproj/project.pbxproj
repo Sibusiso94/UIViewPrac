@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5C2A76E828D31841007E353E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2A76E728D31841007E353E /* TableViewController.swift */; };
 		5C2A76EB28D31CC4007E353E /* Controller+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2A76EA28D31CC4007E353E /* Controller+Extensions.swift */; };
+		5C2A76ED28D3436F007E353E /* SurfSpotTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2A76EC28D3436F007E353E /* SurfSpotTitleView.swift */; };
+		5C2A76EF28D3437C007E353E /* SurfSpotTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C2A76EE28D3437C007E353E /* SurfSpotTitleView.xib */; };
 		D8CDD5CB28D1FBF8008FA383 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CDD5CA28D1FBF8008FA383 /* AppDelegate.swift */; };
 		D8CDD5CD28D1FBF8008FA383 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CDD5CC28D1FBF8008FA383 /* SceneDelegate.swift */; };
 		D8CDD5CF28D1FBF8008FA383 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CDD5CE28D1FBF8008FA383 /* ViewController.swift */; };
@@ -22,6 +24,8 @@
 /* Begin PBXFileReference section */
 		5C2A76E728D31841007E353E /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		5C2A76EA28D31CC4007E353E /* Controller+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Controller+Extensions.swift"; sourceTree = "<group>"; };
+		5C2A76EC28D3436F007E353E /* SurfSpotTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfSpotTitleView.swift; sourceTree = "<group>"; };
+		5C2A76EE28D3437C007E353E /* SurfSpotTitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SurfSpotTitleView.xib; sourceTree = "<group>"; };
 		D8CDD5C728D1FBF8008FA383 /* UIViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8CDD5CA28D1FBF8008FA383 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8CDD5CC28D1FBF8008FA383 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +54,8 @@
 			children = (
 				D8CDD5DE28D3048C008FA383 /* ReusableSurfCardView.swift */,
 				D8CDD5E028D304CD008FA383 /* ReusableSurfCardView.xib */,
+				5C2A76EC28D3436F007E353E /* SurfSpotTitleView.swift */,
+				5C2A76EE28D3437C007E353E /* SurfSpotTitleView.xib */,
 			);
 			path = ReusbaleView;
 			sourceTree = "<group>";
@@ -161,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C2A76EF28D3437C007E353E /* SurfSpotTitleView.xib in Resources */,
 				D8CDD5D728D1FBFB008FA383 /* LaunchScreen.storyboard in Resources */,
 				D8CDD5E128D304CD008FA383 /* ReusableSurfCardView.xib in Resources */,
 				D8CDD5D428D1FBFB008FA383 /* Assets.xcassets in Resources */,
@@ -176,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8CDD5CF28D1FBF8008FA383 /* ViewController.swift in Sources */,
+				5C2A76ED28D3436F007E353E /* SurfSpotTitleView.swift in Sources */,
 				5C2A76EB28D31CC4007E353E /* Controller+Extensions.swift in Sources */,
 				D8CDD5DF28D3048C008FA383 /* ReusableSurfCardView.swift in Sources */,
 				D8CDD5CB28D1FBF8008FA383 /* AppDelegate.swift in Sources */,
