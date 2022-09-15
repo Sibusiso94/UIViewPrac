@@ -26,12 +26,18 @@ class ReusableSurfCardView: UIView {
     }
     
     func cardSetup() {
+//        backgroundImageView.contentMode = UIImageView.ContentMode.scaleAspectFit
         backgroundImageView.layer.cornerRadius = backgroundImageView.frame.size.height / 15
-        companyLogoImageView.layer.cornerRadius = companyLogoImageView.frame.size.height / 2
-        
         backgroundImageView.image = backgroundImage
+        
+        companyLogoImageView.layer.cornerRadius = companyLogoImageView.frame.size.height / 2
+        companyLogoImageView.clipsToBounds = true
+        companyLogoImageView.layer.borderWidth = 1
+        companyLogoImageView.layer.borderColor = UIColor.white.cgColor
         companyLogoImageView.image = companyLogoImage
         
+        titleLable.textColor = UIColor.white
+        subTitleLable.textColor = UIColor.white
         titleLable.text = "Surfer's Point"
         subTitleLable.text = "Popular Spot • 5,2 km"
     }
