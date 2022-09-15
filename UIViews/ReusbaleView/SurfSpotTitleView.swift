@@ -9,12 +9,20 @@ import UIKit
 
 class SurfSpotTitleView: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    @IBOutlet weak var logoImageView: UIImageView!
+    
+    @IBOutlet weak var surfPointTitle: UILabel!
+    
+    @IBOutlet weak var surfPointsubTitle: UILabel!
+    
+    @IBOutlet weak var surfingLabel: UILabel!
+    
+    override func awakeFromNib() {
+        
     }
-    */
-
+    
+    func setUpContent() {
+        
+    }
+    
 }
