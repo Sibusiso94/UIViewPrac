@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var topContainerView: UIView!
+    
     @IBOutlet weak var containerView: UIView!
     
     override func viewDidLoad() {
@@ -17,7 +19,17 @@ class ViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        addSurfCardView()
+        addSSTitleView()
+//        addSurfCardView()
+    }
+    
+    private func addSSTitleView() {
+        let bundle = Bundle.main
+        guard let ssTitleView = bundle.loadNibNamed(("SurfSpotTitleView"), owner: self)?.first as? SurfSpotTitleView else {
+            return }
+        
+        self.topContainerView.addSubview(ssTitleView)
+        ssTitleView.pinEdges(to: self.topContainerView)
     }
     
     private func addSurfCardView() {
@@ -30,9 +42,7 @@ class ViewController: UIViewController {
 //        surfCardView.translatesAutoresizingMaskIntoConstraints = false
         
         self.containerView.addSubview(surfCardView)
-        surfCardView.pinEdges(to: self.view)
+        surfCardView.pinEdges(to: self.containerView)
     }
-
-
 }
 

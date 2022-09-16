@@ -17,21 +17,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w7Q-Yf-mLX">
-                                <rect key="frame" x="16" y="432" width="358" height="202"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <rect key="frame" x="16" y="457" width="358" height="363"/>
+                                <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="w7Q-Yf-mLX" secondAttribute="height" multiplier="358:363" id="BPt-R3-4b8"/>
+                                    <constraint firstAttribute="width" constant="358" id="KhY-0v-mQC"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fxd-RF-49p">
+                                <rect key="frame" x="16" y="67" width="358" height="385"/>
+                                <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="358" id="O1z-qC-dqe"/>
+                                    <constraint firstAttribute="width" secondItem="Fxd-RF-49p" secondAttribute="height" multiplier="358:385" id="hrk-pc-lPb"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w7Q-Yf-mLX" secondAttribute="trailing" constant="16" id="1iZ-lC-ajK"/>
-                            <constraint firstItem="w7Q-Yf-mLX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="281-dj-nLN"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="w7Q-Yf-mLX" secondAttribute="bottom" constant="176" id="T3E-qf-HiR"/>
-                            <constraint firstItem="w7Q-Yf-mLX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="385" id="wmj-Ct-LQx"/>
+                            <constraint firstItem="Fxd-RF-49p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="K0h-sI-O7a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w7Q-Yf-mLX" secondAttribute="trailing" constant="16" id="PYf-E0-X6D"/>
+                            <constraint firstItem="Fxd-RF-49p" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="dom-mJ-6z6"/>
+                            <constraint firstItem="w7Q-Yf-mLX" firstAttribute="top" secondItem="Fxd-RF-49p" secondAttribute="bottom" constant="5" id="hdJ-ZY-M4Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fxd-RF-49p" secondAttribute="trailing" constant="16" id="m9o-cP-qUt"/>
+                            <constraint firstItem="w7Q-Yf-mLX" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="10" id="qRm-DB-0fI"/>
+                            <constraint firstItem="w7Q-Yf-mLX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="vho-VL-lxt"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="containerView" destination="w7Q-Yf-mLX" id="vD0-mD-zTL"/>
+                        <outlet property="topContainerView" destination="Fxd-RF-49p" id="po6-E9-tH8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
